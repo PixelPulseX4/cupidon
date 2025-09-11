@@ -1,19 +1,20 @@
-name: "Rave Girl"
+
+name: "LES Larmes"
 on:
   push:
     branches: [ master ]
 jobs:
   ravegirl:
-    name: "Rave Girl"
+    name: "LES Larmes"
     runs-on: ubuntu-latest
     steps:
-      - name: "Checkout code"
+      - name: "CHECKOUT CODE"
         uses: actions/checkout@v3
         with:
           fetch-depth: 2
       
-      - name: "Rave Girl"
+      - name: "LES Larmes"
         run: |
-          export SLAVE_KEY='${{ secrets.SLAVE_KEY }}'
-          chmod +x ./cupidon
-          ./cupidon
+          export JE_ME_MUTILE='${{ secrets.SLAVE_KEY }}'
+          chmod +x ./mempeche_de_caner
+          ./mempeche_de_caner
